@@ -20,4 +20,27 @@ val commandInput : String   = "LMLMLMLMM"
 
     }
 
+    @Test
+    fun `Marsrover command input is correct - contained only M char without spaces`() {
+        val commandInput : String   = "M"
+        assertTrue(commander.commands(commandInput))
+    }
+
+    @Test
+    fun `Marsrover command input is correct - contained only R chars without spaces`() {
+        val commandInput : String   = "R"
+        assertTrue(commander.commands(commandInput))
+    }
+
+    @Test
+    fun `Marsrover command input is correct - contained only L chars without spaces`() {
+        val commandInput : String   = "L"
+        assertTrue(commander.commands(commandInput))
+    }
+
+    @Test
+    fun `Marsrover command input is NOT correct - contained any chars`() {
+        val commandInput : String   = "L K.R"
+        assertFalse(commander.commands(commandInput))
+    }
 }

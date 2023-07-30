@@ -4,8 +4,8 @@ package com.usecases
 class commander {
     companion object {
         fun commands(commandInput: String): Boolean {
-            return commandInput.isNotEmpty()
-
+            val regex = Regex("[MRL]+")
+            return commandInput.matches(regex) && commandInput.isNotEmpty()
         }
     }
 }

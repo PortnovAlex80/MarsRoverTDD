@@ -84,7 +84,7 @@
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.commanderTest">
+  <component name="RunManager" selected="Gradle.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces">
     <configuration name="MarsRoverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -157,30 +157,6 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="MarsRoverTest.Check command go forward M(move) to SOUTH" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.marsrover.MarsRoverTest.Check command go forward M(move) to SOUTH&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
     <configuration name="commanderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -205,13 +181,37 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.usecases.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces" />
         <item itemvalue="Gradle.commanderTest" />
         <item itemvalue="Gradle.MarsRoverTest" />
         <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to EAST" />
         <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to NORTH" />
-        <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to SOUTH" />
       </list>
     </recent_temporary>
   </component>

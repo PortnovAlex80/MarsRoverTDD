@@ -15,6 +15,10 @@ class MarsRover(var  position: Position = Position (0,0),
     fun left() {
         direction = direction.left()
     }
+
+    fun right() {
+        direction = direction.right()
+    }
 }
 
 data class Position (val  x: Int, val y: Int)
@@ -32,6 +36,11 @@ enum class Direction(val symbol: Char) {
     // Helper function to calculate the next direction when turning left
     fun left(): Direction {
         val newIndex = (ordinal - 1 + count) % count
+        return values()[newIndex]
+    }
+
+    fun right(): Direction {
+        val newIndex = (ordinal + 1 + count) % count
         return values()[newIndex]
     }
 }

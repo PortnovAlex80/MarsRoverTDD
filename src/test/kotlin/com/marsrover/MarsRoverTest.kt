@@ -64,6 +64,45 @@ class MarsRoverTest {
         assertEquals(Position( startPosition.x, startPosition.y - 1), rover.position)
     }
 
+    @Test
+    fun `Check command go forward M(move) to EAST`() {
+        println("[TEST] Check command go forward M(move)")
+        val startDirection: Direction = Direction.EAST
+        val startPosition: Position = Position(Random.nextInt(0,101),Random.nextInt(0,101))
+
+        println("Start position and direction is $startPosition and $startDirection")
+        val rover = MarsRover(startPosition, startDirection)
+        rover.move()
+        println("MarsRover position and direction is $rover.position and $rover.direction")
+        assertEquals(Position( startPosition.x + 1, startPosition.y), rover.position)
+    }
+
+    @Test
+    fun `Check command go forward M(move) to WEST`() {
+        println("[TEST] Check command go forward M(move)")
+        val startDirection: Direction = Direction.WEST
+        val startPosition: Position = Position(Random.nextInt(0,101),Random.nextInt(0,101))
+
+        println("Start position and direction is $startPosition and $startDirection")
+        val rover = MarsRover(startPosition, startDirection)
+        rover.move()
+        println("MarsRover position and direction is $rover.position and $rover.direction")
+        assertEquals(Position( startPosition.x - 1, startPosition.y), rover.position)
+    }
+
+    @Test
+    fun `Check command 'L' go Left)`() {
+        println("[TEST] Check command 'L' go Left")
+        val startDirection: Direction = Direction.WEST
+        val startPosition: Position = Position(Random.nextInt(0,101),Random.nextInt(0,101))
+
+        println("Start position and direction is $startPosition and $startDirection")
+        val rover = MarsRover(startPosition, startDirection)
+        rover.left()
+        println("MarsRover position and direction is $rover.position and $rover.direction")
+        assertEquals(startDirection.left(), rover.direction)
+    }
+
 }
 
 

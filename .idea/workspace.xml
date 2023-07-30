@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="test move N and S">
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="left TODO(&quot;Not yet implemented&quot;)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
@@ -106,7 +106,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="MarsRoverTest.Check any position and direction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MarsRoverTest.Check command go forward M(move) to EAST" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.marsrover.MarsRoverTest.Check any position and direction&quot;" />
+            <option value="&quot;com.marsrover.MarsRoverTest.Check command go forward M(move) to EAST&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,10 +205,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MarsRoverTest" />
+        <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to EAST" />
         <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to NORTH" />
         <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to SOUTH" />
         <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move)" />
-        <item itemvalue="Gradle.MarsRoverTest.Check any position and direction" />
       </list>
     </recent_temporary>
   </component>
@@ -277,13 +277,22 @@
       <option name="project" value="LOCAL" />
       <updated>1690730546729</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="left TODO(&quot;Not yet implemented&quot;)">
+      <option name="closed" value="true" />
+      <created>1690731003781</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690731003781</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create new repository MarsRoverTdd" />
     <MESSAGE value="test Start Position" />
     <MESSAGE value="test move N and S" />
-    <option name="LAST_COMMIT_MESSAGE" value="test move N and S" />
+    <MESSAGE value="left TODO(&quot;Not yet implemented&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="left TODO(&quot;Not yet implemented&quot;)" />
   </component>
 </project>

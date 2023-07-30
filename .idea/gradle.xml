@@ -8,6 +8,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/businessMarsRover" />
+            <option value="$PROJECT_DIR$/businessMarsRover/src" />
+            <option value="$PROJECT_DIR$/businessMarsRover/src/main" />
+            <option value="$PROJECT_DIR$/businessMarsRover/src/main/kotlin" />
+            <option value="$PROJECT_DIR$/businessMarsRover/src/test" />
+            <option value="$PROJECT_DIR$/businessMarsRover/src/test/kotlin" />
+            <option value="$PROJECT_DIR$/presentation" />
+            <option value="$PROJECT_DIR$/presentation/main" />
+            <option value="$PROJECT_DIR$/presentation/test" />
           </set>
         </option>
       </GradleProjectSettings>

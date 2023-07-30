@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="Commander controller add">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" afterDir="false" />
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="Commander controller check command line">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +80,8 @@
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces">
-    <configuration name="MarsRoverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'MarsRoverTdd.test'">
+    <configuration name="Tests in 'MarsRoverTdd.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -97,56 +93,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.marsrover.MarsRoverTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="MarsRoverTest.Check command go forward M(move) to EAST" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.marsrover.MarsRoverTest.Check command go forward M(move) to EAST&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="MarsRoverTest.Check command go forward M(move) to NORTH" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.marsrover.MarsRoverTest.Check command go forward M(move) to NORTH&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +127,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="commanderTest.Marsrover command input is NOT correct - contained any chars" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +140,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.usecases.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces&quot;" />
+            <option value="&quot;com.usecases.commanderTest.Marsrover command input is NOT correct - contained any chars&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="commanderTest.Marsrover command input is correct - contained only M char without spaces" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.usecases.commanderTest.Marsrover command input is correct - contained only M char without spaces&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="commanderTest.Marsrover command input is correct - contained only R chars without spaces" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.usecases.commanderTest.Marsrover command input is correct - contained only R chars without spaces&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.commanderTest.Marsrover command input is correct - contained only M, R, L chars without spaces" />
+        <item itemvalue="Gradle.Tests in 'MarsRoverTdd.test'" />
         <item itemvalue="Gradle.commanderTest" />
-        <item itemvalue="Gradle.MarsRoverTest" />
-        <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to EAST" />
-        <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move) to NORTH" />
+        <item itemvalue="Gradle.commanderTest.Marsrover command input is NOT correct - contained any chars" />
+        <item itemvalue="Gradle.commanderTest.Marsrover command input is correct - contained only R chars without spaces" />
+        <item itemvalue="Gradle.commanderTest.Marsrover command input is correct - contained only M char without spaces" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +298,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690732548149</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commander controller add">
+      <option name="closed" value="true" />
+      <created>1690732558183</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690732558183</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commander controller check command line">
+      <option name="closed" value="true" />
+      <created>1690733316319</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690733316319</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -314,6 +324,7 @@
     <MESSAGE value="left TODO(&quot;Not yet implemented&quot;)" />
     <MESSAGE value="Check command 'L' go Left) done" />
     <MESSAGE value="Commander controller add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commander controller add" />
+    <MESSAGE value="Commander controller check command line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commander controller check command line" />
   </component>
 </project>

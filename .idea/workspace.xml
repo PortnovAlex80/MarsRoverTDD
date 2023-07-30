@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="Create new repository MarsRoverTdd">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="test Start Position">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MarsRoverTdd" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -77,7 +81,7 @@
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MarsRoverTest.Start position 0,0 must be 0,0">
+  <component name="RunManager" selected="Gradle.MarsRoverTest">
     <configuration name="MarsRoverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -92,6 +96,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.marsrover.MarsRoverTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MarsRoverTest.Check any position and direction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.marsrover.MarsRoverTest.Check any position and direction&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MarsRoverTest.Check command go forward M(move)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.marsrover.MarsRoverTest.Check command go forward M(move)&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,27 +185,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="build.sh" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/build.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MarsRoverTest.Start position 0,0 must be 0,0" />
         <item itemvalue="Gradle.MarsRoverTest" />
+        <item itemvalue="Gradle.MarsRoverTest.Check command go forward M(move)" />
+        <item itemvalue="Gradle.MarsRoverTest.Check any position and direction" />
+        <item itemvalue="Gradle.MarsRoverTest.Start position 0,0 must be 0,0" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Shell Script.build.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -198,26 +236,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690723261982</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test Start Position">
+      <option name="closed" value="true" />
+      <created>1690725743913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690725743913</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test Start Position">
+      <option name="closed" value="true" />
+      <created>1690726580636</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690726580636</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create new repository MarsRoverTdd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new repository MarsRoverTdd" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-function">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt</url>
-          <line>8</line>
-          <properties class="com.marsrover.MarsRoverTest" method="Start position 0,0 must be 0,0">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="test Start Position" />
+    <option name="LAST_COMMIT_MESSAGE" value="test Start Position" />
   </component>
 </project>

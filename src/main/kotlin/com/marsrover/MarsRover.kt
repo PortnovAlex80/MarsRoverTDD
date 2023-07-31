@@ -1,7 +1,8 @@
 package com.marsrover
 
 class MarsRover(var  position: Position = Position (0,0),
-                var direction: Direction = Direction.NORTH) {
+                var direction: Direction = Direction.NORTH
+) {
 
     fun move() {
         position = when (direction) {

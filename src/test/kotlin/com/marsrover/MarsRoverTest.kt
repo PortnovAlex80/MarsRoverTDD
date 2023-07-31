@@ -1,5 +1,8 @@
 package com.marsrover
 
+import com.marsrover.Direction
+import com.marsrover.MarsRover
+import com.marsrover.Position
 import org.junit.jupiter.api.Test
 import kotlin.random.Random
 import kotlin.test.assertEquals

@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="readme readme">
-      <change afterPath="$PROJECT_DIR$/businessMarsRover/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessMarsRover/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/kotlin/com/marsrover/presentation/controller/MarsRoverController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com.marsrover/MarsRover.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com.marsrover/MarsRoverTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="try to refact CA fault :-(">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/input/interfaceInput.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/input/interfaceInputTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/businessMarsRover/src/main/kotlin/com.marsrover/MarsRover.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/businessMarsRover/src/test/kotlin/com.marsrover/MarsRoverTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com.marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com.marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +47,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,19 +70,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "semeru-17",
-    "last_opened_file_path": "/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;semeru-17&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin/com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
@@ -103,6 +101,7 @@
       <recent name="$PROJECT_DIR$/businessMarsRover/src/aaa/com.marsrover" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.input" />
       <recent name="" />
       <recent name="com.usecases" />
       <recent name="com.marsrover" />
@@ -322,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690750882280</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="try to refact CA fault :-(">
+      <option name="closed" value="true" />
+      <created>1690757297556</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690757297556</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -334,6 +341,7 @@
     <MESSAGE value="Commander controller add" />
     <MESSAGE value="Commander controller check command line" />
     <MESSAGE value="readme readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme readme" />
+    <MESSAGE value="try to refact CA fault :-(" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to refact CA fault :-(" />
   </component>
 </project>

@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="try to refact CA fault :-(">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/input/interfaceInput.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/input/interfaceInputTest.kt" afterDir="false" />
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="command engine well done">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/plague/Plague.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/usecases/Commander.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/plague/PlagueTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com.marsrover/MarsRover.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/marsrover/MarsRover.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com.marsrover/MarsRoverTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/marsrover/MarsRoverTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,20 +70,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;semeru-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin/com&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "semeru-17",
+    "last_directory_selection": "/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin/com",
+    "last_opened_file_path": "/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
@@ -101,13 +102,38 @@
       <recent name="$PROJECT_DIR$/businessMarsRover/src/aaa/com.marsrover" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.platue" />
       <recent name="com.input" />
       <recent name="" />
       <recent name="com.usecases" />
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'MarsRoverTdd.test'">
+  <component name="RunManager" selected="Gradle.PlatueTest">
+    <configuration name="PlatueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.platue.PlatueTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'MarsRoverTdd.businessMarsRover.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,13 +202,6 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="gradle.build.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="MarsRoverTdd" />
-      <option name="filePath" value="$PROJECT_DIR$/presentation/gradle.build.kts" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="build.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -200,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlatueTest" />
         <item itemvalue="Gradle.Tests in 'MarsRoverTdd.test'" />
         <item itemvalue="Gradle.commanderTest" />
         <item itemvalue="Gradle.Tests in 'MarsRoverTdd.businessMarsRover.test'" />
         <item itemvalue="Shell Script.build.sh" />
-        <item itemvalue="Kotlin script (Beta).gradle.build.kts" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690757297556</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="command engine well done">
+      <option name="closed" value="true" />
+      <created>1690795800172</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690795800172</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -342,6 +369,7 @@
     <MESSAGE value="Commander controller check command line" />
     <MESSAGE value="readme readme" />
     <MESSAGE value="try to refact CA fault :-(" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to refact CA fault :-(" />
+    <MESSAGE value="command engine well done" />
+    <option name="LAST_COMMIT_MESSAGE" value="command engine well done" />
   </component>
 </project>

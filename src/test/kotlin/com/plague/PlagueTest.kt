@@ -1,5 +1,7 @@
 package com.plague
 
+import com.marsrover.Plague
+import com.marsrover.Size
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

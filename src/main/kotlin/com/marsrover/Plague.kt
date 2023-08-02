@@ -1,6 +1,4 @@
-package com.plague
-
-import com.marsrover.Position
+package com.marsrover
 
 class Plague(val size: Size) {
     fun isWithinSize(position: Position): Boolean {

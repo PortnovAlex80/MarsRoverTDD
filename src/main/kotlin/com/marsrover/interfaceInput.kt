@@ -1,8 +1,4 @@
-package com.input
-
-import com.marsrover.Direction
-import com.marsrover.Position
-import com.plague.Size
+package com.marsrover
 
 class interfaceInput
 

@@ -1,10 +1,6 @@
 package com.usecases
 
-import com.marsrover.Direction
-import com.marsrover.MarsRover
-import com.marsrover.Position
-import com.plague.Plague
-import com.plague.Size
+import com.marsrover.*
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

@@ -1,9 +1,9 @@
-import com.input.getRoverCount
-import com.input.readPlagueSizeInput
-import com.input.readRoverInput
-import com.plague.Plague
+import com.marsrover.getRoverCount
+import com.marsrover.readPlagueSizeInput
+import com.marsrover.readRoverInput
+import com.marsrover.Plague
 import com.marsrover.MarsRover
-import com.usecases.InstructionsProcessor
+import com.marsrover.InstructionsProcessor
 
 class Main
 

@@ -1,8 +1,4 @@
-package com.usecases
-
-import com.marsrover.Direction
-import com.marsrover.MarsRover
-import com.plague.Plague
+package com.marsrover
 
 // class for commands check
 class InstructionsProcessor(val rover: MarsRover, var plague: Plague) {

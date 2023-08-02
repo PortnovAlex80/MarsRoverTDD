@@ -32,6 +32,10 @@ enum class Direction(val symbol: Char) {
 
     companion object {
         val count = values().size
+
+        private val shortSymbolMap = values().associateBy { it.symbol }
+
+
     }
 
     // Helper function to calculate the next direction when turning left

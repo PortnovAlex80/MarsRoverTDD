@@ -3,10 +3,9 @@ package com.usecases
 import com.marsrover.Direction
 import com.marsrover.MarsRover
 import com.plague.Plague
-import com.plague.Size
 
 // class for commands check
-class Commander(val rover: MarsRover, var plague: Plague) {
+class InstructionsProcessor(val rover: MarsRover, var plague: Plague) {
 
     companion object {
         fun checkInputCommands(commandInput: String): Boolean {

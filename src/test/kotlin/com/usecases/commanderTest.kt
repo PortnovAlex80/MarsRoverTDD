@@ -12,40 +12,40 @@ class commanderTest {
 @Test
 fun `Marsrover command input is not empty`() {
 val commandInput : String   = "LMLMLMLMM"
-    Commander.checkInputCommands(commandInput)
-    assertTrue(Commander.checkInputCommands(commandInput))
+    InstructionsProcessor.checkInputCommands(commandInput)
+    assertTrue(InstructionsProcessor.checkInputCommands(commandInput))
 
 }
 
     @Test
     fun `Marsrover command input is empty`() {
         val commandInput : String   = ""
-        assertFalse(Commander.checkInputCommands(commandInput))
+        assertFalse(InstructionsProcessor.checkInputCommands(commandInput))
 
     }
 
     @Test
     fun `Marsrover command input is correct - contained only M char without spaces`() {
         val commandInput : String   = "M"
-        assertTrue(Commander.checkInputCommands(commandInput))
+        assertTrue(InstructionsProcessor.checkInputCommands(commandInput))
     }
 
     @Test
     fun `Marsrover command input is correct - contained only R chars without spaces`() {
         val commandInput : String   = "R"
-        assertTrue(Commander.checkInputCommands(commandInput))
+        assertTrue(InstructionsProcessor.checkInputCommands(commandInput))
     }
 
     @Test
     fun `Marsrover command input is correct - contained only L chars without spaces`() {
         val commandInput : String   = "L"
-        assertTrue(Commander.checkInputCommands(commandInput))
+        assertTrue(InstructionsProcessor.checkInputCommands(commandInput))
     }
 
     @Test
     fun `Marsrover command input is NOT correct - contained any chars`() {
         val commandInput : String   = "L K.R"
-        assertFalse(Commander.checkInputCommands(commandInput))
+        assertFalse(InstructionsProcessor.checkInputCommands(commandInput))
     }
 
     @Test
@@ -54,7 +54,7 @@ val commandInput : String   = "LMLMLMLMM"
         val position = Position(0,1)
         val rover = MarsRover();
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
         assertEquals(position, rover.position)
     }
 
@@ -67,7 +67,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         assertEquals(newDirection, rover.direction)
     }
@@ -81,7 +81,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         assertEquals(newDirection, rover.direction)
     }
@@ -94,7 +94,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         assertEquals(direction, rover.direction)
     }
@@ -107,7 +107,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         assertEquals(direction, rover.direction)
     }
@@ -120,7 +120,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         assertEquals(Position(0,4), rover.position)
     }
@@ -137,7 +137,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
         //        `1 3 N` 👈 конечное положение и направление камеры первого марсохода
         assertEquals(Position(1,3), rover.position)
@@ -155,7 +155,7 @@ val commandInput : String   = "LMLMLMLMM"
         val rover = MarsRover(position,direction);
 
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 
 //        `5 1 E` 👈 конечное положение и направление камеры второго марсохода
         assertEquals(Position(5,1), rover.position)
@@ -172,7 +172,7 @@ val commandInput : String   = "LMLMLMLMM"
         val position = Position(3,3)
         val rover = MarsRover(position,direction);
         val plague = Plague(Size(5,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 //        `5 1 E` 👈 конечное положение и направление камеры второго марсохода
 
         assertEquals(Position(5,1), rover.position)
@@ -189,7 +189,7 @@ val commandInput : String   = "LMLMLMLMM"
         val position = Position(3,3)
         val rover = MarsRover(position,direction);
         val plague = Plague(Size(4,5))
-        Commander.commandslist(rover, commandInput, plague)
+        InstructionsProcessor.commandslist(rover, commandInput, plague)
 //        `5 1 E` 👈 конечное положение и направление камеры второго марсохода
 
         assertEquals(Position(4,1), rover.position)

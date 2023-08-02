@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="command engine well done">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/plague/Plague.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/usecases/Commander.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/plague/PlagueTest.kt" afterDir="false" />
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="add check size and out of the plague">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/usecases/commander.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/usecases/commanderTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlatueTest">
+  <component name="RunManager" selected="Shell Script.build.sh">
     <configuration name="PlatueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -219,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PlatueTest" />
+        <item itemvalue="Shell Script.build.sh" />
         <item itemvalue="Gradle.Tests in 'MarsRoverTdd.test'" />
+        <item itemvalue="Gradle.PlatueTest" />
         <item itemvalue="Gradle.commanderTest" />
         <item itemvalue="Gradle.Tests in 'MarsRoverTdd.businessMarsRover.test'" />
-        <item itemvalue="Shell Script.build.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690795800172</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add check size and out of the plague">
+      <option name="closed" value="true" />
+      <created>1690801037998</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690801037998</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -370,6 +372,7 @@
     <MESSAGE value="readme readme" />
     <MESSAGE value="try to refact CA fault :-(" />
     <MESSAGE value="command engine well done" />
-    <option name="LAST_COMMIT_MESSAGE" value="command engine well done" />
+    <MESSAGE value="add check size and out of the plague" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check size and out of the plague" />
   </component>
 </project>

@@ -4,13 +4,13 @@ package com.marsrover
 class InstructionsProcessor(val rover: MarsRover, var plague: Plague) {
 
     companion object {
-        fun checkInputCommands(commandInput: String): Boolean {
+        fun isCommandsCorrect(commandInput: String): Boolean {
             val regex = Regex("[MRL]+")
             return commandInput.matches(regex) && commandInput.isNotEmpty()
         }
 
-        fun commandslist(rover: MarsRover, commandInput: String, plague: Plague): Boolean {
-            if (!checkInputCommands(commandInput)) {
+        fun commandsListExecutor(rover: MarsRover, commandInput: String, plague: Plague): Boolean {
+            if (!isCommandsCorrect(commandInput)) {
                 return false
             }
             for (command in commandInput) {

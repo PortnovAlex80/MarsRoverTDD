@@ -1,6 +1,6 @@
 import com.marsrover.getRoverCount
-import com.marsrover.readPlagueSizeInput
-import com.marsrover.readRoverInput
+import com.marsrover.getPlagueSize
+import com.marsrover.getStartRoverPosition
 import com.marsrover.Plague
 import com.marsrover.MarsRover
 import com.marsrover.InstructionsProcessor
@@ -9,13 +9,13 @@ class Main
 
 fun main(args: Array<String>) {
 
-    val plague = Plague(readPlagueSizeInput())
+    val plague = Plague(getPlagueSize())
 
     val roverCount = getRoverCount()
     val rovers = mutableListOf<MarsRover>()
 
     for (i in 1..roverCount) {
-        val roverPosition = readRoverInput(i)
+        val roverPosition = getStartRoverPosition(i)
         val rover = MarsRover(roverPosition.position, roverPosition.direction)
         rovers.add(rover)
     }
@@ -30,9 +30,9 @@ fun main(args: Array<String>) {
             if (commands == "EXIT") {
                 println("Exiting the game. Goodbye!")
                 return
-            } else if (commands != null && InstructionsProcessor.checkInputCommands(commands)) {
+            } else if (commands != null && InstructionsProcessor.isCommandsCorrect(commands)) {
                 // Process the commands for the rover
-                InstructionsProcessor.commandslist(rover, commands, plague)
+                InstructionsProcessor.commandsListExecutor(rover, commands, plague)
 
                 println("Final position for Rover ${index + 1}: ${rover.position}, Direction: ${rover.direction}")
             } else {

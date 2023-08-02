@@ -2,7 +2,7 @@ package com.marsrover
 
 class interfaceInput
 
-fun readPlagueSizeInput(): Size {
+fun getPlagueSize(): Size {
     println("Enter верхний правый угол плато")
     println("example: `5 5` (format: 'x y'):")
 
@@ -45,7 +45,7 @@ fun getRoverCount(): Int {
     }
 }
 
-fun readRoverInput(roverNumber: Int): RoverPosition {
+fun getStartRoverPosition(roverNumber: Int): RoverPosition {
     println("Enter the starting position and direction for Rover $roverNumber (format: 'x y D', where D can be N, E, S, or W):")
 
     while (true) {

@@ -5,8 +5,6 @@ import com.marsrover.Plague
 import com.marsrover.MarsRover
 import com.marsrover.RoverInstructionsProcessor
 
-class Main
-
 fun main(args: Array<String>) {
 
     val plague = Plague(getPlagueSize())
@@ -42,4 +40,5 @@ fun main(args: Array<String>) {
     }
 
 }
+
 

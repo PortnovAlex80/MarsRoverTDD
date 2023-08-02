@@ -1,4 +1,4 @@
-package com.plague
+package com.marsrover
 
 import com.marsrover.Plague
 import com.marsrover.Size

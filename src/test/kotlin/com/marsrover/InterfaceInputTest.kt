@@ -1,4 +1,4 @@
-package com.input
+package com.marsrover
 
 class interfaceInputTest {
 

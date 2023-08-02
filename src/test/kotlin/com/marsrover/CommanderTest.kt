@@ -1,4 +1,4 @@
-package com.usecases
+package com.marsrover
 
 import com.marsrover.*
 import org.junit.jupiter.api.Assertions.*

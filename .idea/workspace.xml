@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="add check size and out of the plague">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c0ed0ba9-5503-4657-bec7-99a74cae077c" name="Changes" comment="game engine done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,21 +62,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "semeru-17",
-    "last_directory_selection": "/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin/com",
-    "last_opened_file_path": "/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;semeru-17&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin/com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/infrastructurehw/IdeaProjects/MarsRoverTdd/src/test/kotlin&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
@@ -90,10 +88,14 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/com/marsrover" />
       <recent name="$PROJECT_DIR$/businessMarsRover/src/test/kotlin" />
       <recent name="$PROJECT_DIR$/businessMarsRover/src/main/kotlin" />
       <recent name="$PROJECT_DIR$/businessMarsRover/src/aaa" />
       <recent name="$PROJECT_DIR$/businessMarsRover/src/aaa/com.marsrover" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.marsrover" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.platue" />
@@ -103,7 +105,7 @@
       <recent name="com.marsrover" />
     </key>
   </component>
-  <component name="RunManager" selected="Shell Script.build.sh">
+  <component name="RunManager" selected="Gradle.Tests in 'MarsRoverTdd.test'">
     <configuration name="PlatueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -118,28 +120,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.platue.PlatueTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'MarsRoverTdd.businessMarsRover.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":businessMarsRover:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,29 +152,19 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="commanderTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.usecases.commanderTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
+    <configuration name="MainApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApplicationKt" />
+      <module name="MarsRoverTdd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="MarsRoverTdd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="build.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
@@ -213,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Shell Script.build.sh" />
         <item itemvalue="Gradle.Tests in 'MarsRoverTdd.test'" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.MainApplicationKt" />
+        <item itemvalue="Shell Script.build.sh" />
         <item itemvalue="Gradle.PlatueTest" />
-        <item itemvalue="Gradle.commanderTest" />
-        <item itemvalue="Gradle.Tests in 'MarsRoverTdd.businessMarsRover.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +328,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690801037998</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="game engine done">
+      <option name="closed" value="true" />
+      <created>1690990817307</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1690990817307</updated>
+    </task>
+    <task id="LOCAL-00018" summary="game engine done">
+      <option name="closed" value="true" />
+      <created>1690991284348</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690991284348</updated>
+    </task>
+    <task id="LOCAL-00019" summary="game engine done">
+      <option name="closed" value="true" />
+      <created>1690991486894</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690991486894</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -373,6 +367,7 @@
     <MESSAGE value="try to refact CA fault :-(" />
     <MESSAGE value="command engine well done" />
     <MESSAGE value="add check size and out of the plague" />
-    <option name="LAST_COMMIT_MESSAGE" value="add check size and out of the plague" />
+    <MESSAGE value="game engine done" />
+    <option name="LAST_COMMIT_MESSAGE" value="game engine done" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 package com.marsrover
 
 // class for commands check
-class InstructionsProcessor(val rover: MarsRover, var plague: Plague) {
+class RoverInstructionsProcessor(val rover: MarsRover, var plague: Plague) {
 
     companion object {
         fun isCommandsCorrect(commandInput: String): Boolean {
@@ -9,7 +9,7 @@ class InstructionsProcessor(val rover: MarsRover, var plague: Plague) {
             return commandInput.matches(regex) && commandInput.isNotEmpty()
         }
 
-        fun commandsListExecutor(rover: MarsRover, commandInput: String, plague: Plague): Boolean {
+        fun executor(rover: MarsRover, commandInput: String, plague: Plague): Boolean {
             if (!isCommandsCorrect(commandInput)) {
                 return false
             }

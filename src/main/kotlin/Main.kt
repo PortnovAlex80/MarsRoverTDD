@@ -3,7 +3,7 @@ import com.marsrover.getPlagueSize
 import com.marsrover.getStartRoverPosition
 import com.marsrover.Plague
 import com.marsrover.MarsRover
-import com.marsrover.InstructionsProcessor
+import com.marsrover.RoverInstructionsProcessor
 
 class Main
 
@@ -30,9 +30,9 @@ fun main(args: Array<String>) {
             if (commands == "EXIT") {
                 println("Exiting the game. Goodbye!")
                 return
-            } else if (commands != null && InstructionsProcessor.isCommandsCorrect(commands)) {
+            } else if (commands != null && RoverInstructionsProcessor.isCommandsCorrect(commands)) {
                 // Process the commands for the rover
-                InstructionsProcessor.commandsListExecutor(rover, commands, plague)
+                RoverInstructionsProcessor.executor(rover, commands, plague)
 
                 println("Final position for Rover ${index + 1}: ${rover.position}, Direction: ${rover.direction}")
             } else {
